@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.1..3.18)
 
+
+
+
 # Policies
 
 # Include file check macros honor CMAKE_REQUIRED_LIBRARIES, CMake >= 3.12
@@ -18,6 +21,8 @@ if(POLICY CMP0091)
 endif()
 
 project(libsamplerate VERSION 0.1.9 LANGUAGES C)
+
+SET(CMAKE_C_FLAGS "-O3 -fPIC")
 
 # Configuration
 
